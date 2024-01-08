@@ -1,0 +1,11 @@
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.32);
+    -fx-text-fill: #ffffff; /* Set the text color */
+}
+
+.text-field:focused {
+    -fx-border-width: 2px;
+}
+.text-field:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.32); /* Adjust for hover effect */
+}

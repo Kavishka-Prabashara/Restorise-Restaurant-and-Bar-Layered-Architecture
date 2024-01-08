@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="720.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.restorise.restorisems.controller.StockController">
+    <children>
+        <Label layoutX="572.0" layoutY="12.0" text="Stock" textFill="WHITE">
+            <font>
+                <Font name="Impact" size="40.0" />
+            </font>
+        </Label>
+      <TableView fx:id="tblStock" editable="true" layoutX="20.0" layoutY="180.0" prefHeight="575.0" prefWidth="1212.0" stylesheets="@../style/tablestyle.css">
+        <columns>
+          <TableColumn fx:id="colStockSupplierID" prefWidth="202.0" text="Supplier ID" />
+          <TableColumn fx:id="colStockSupplierName" prefWidth="202.0" text="Supplier Name" />
+            <TableColumn fx:id="colStockSuppliedItemID" prefWidth="202.0" sortType="DESCENDING" text="Item ID" />
+            <TableColumn fx:id="colStockSuppliedItemType" prefWidth="202.0" text="Item Type" />
+            <TableColumn fx:id="colStockQTY" prefWidth="202.0" text="Stocks" />
+            <TableColumn fx:id="colStockSuppliedDate" prefWidth="202.0" text="Supplied Date" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnstocksUpdate" layoutX="994.0" layoutY="121.0" onAction="#stocksUpdateOnaAction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Update" />
+      <JFXButton fx:id="btngetStocksJasparrreports" layoutX="875.0" layoutY="121.0" onAction="#getStocksJasparrreportsOnAction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Get Recipts" />
+      <JFXButton fx:id="btnstocksDelete" layoutX="1113.0" layoutY="121.0" onAction="#stocksDeleteOnAction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Delete" />
+    </children>
+</AnchorPane>

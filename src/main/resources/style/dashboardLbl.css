@@ -1,0 +1,6 @@
+.Label {
+    -fx-text-fill: #00ff00; /* Set text color to green */
+    -fx-font-size: 16px; /* Set font size to 16 pixels */
+    -fx-font-family: "Arial"; /* Set font family to Arial or your preferred font */
+    -fx-font-weight: bold; /* Set font weight to bold */
+}

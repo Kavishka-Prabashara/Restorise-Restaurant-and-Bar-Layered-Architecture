@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="780.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.restorise.restorisems.controller.EmployeeController">
+    <children>
+        <Line endX="369.7999267578125" endY="1.52587890625E-5" layoutX="519.0" layoutY="66.0" startX="-100.0" stroke="WHITE" />
+        <Label layoutX="511.0" layoutY="12.0" text="Manage Employee" textFill="WHITE">
+            <font>
+                <Font name="Impact" size="40.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtEmpId" layoutX="22.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Employee ID" stylesheets="@../style/managePageForStyle.css" />
+        <TextField fx:id="txtEmpName" layoutX="271.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Employee Name" stylesheets="@../style/managePageForStyle.css" />
+        <TextField fx:id="txtEmpMobile" layoutX="1010.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Employee Mobile-No" stylesheets="@../style/managePageForStyle.css" />
+        <DatePicker fx:id="empDate" layoutX="517.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Employee Birth of Date" stylesheets="@../style/datepicker.css" />
+        <TextField fx:id="txtEmpemail" layoutX="764.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Employee Email" stylesheets="@../style/managePageForStyle.css" />
+        <JFXButton fx:id="btnSave" layoutX="1128.0" layoutY="262.0" onAction="#EmpSaveOnAction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Save">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="tblEmployee" layoutX="20.0" layoutY="337.0" prefHeight="425.0" prefWidth="1212.0" stylesheets="@../style/tablestyle.css">
+            <columns>
+                <TableColumn fx:id="colEmployeeId" minWidth="202.0" prefWidth="75.0" text="Employee ID" />
+                <TableColumn fx:id="colEmployeeName" minWidth="202.0" prefWidth="75.0" text="Employee Name" />
+                <TableColumn fx:id="colEmployeeMobileNO" minWidth="202.0" prefWidth="75.0" text="Employee Mobile NO" />
+                <TableColumn fx:id="colEmployeeEmail" minWidth="202.0" prefWidth="75.0" text="Employee Email" />
+                <TableColumn fx:id="colEmployeeBirth" minWidth="202.0" prefWidth="75.0" text="Employee Birth of Date" />
+                <TableColumn fx:id="colJobPost" minWidth="202.0" prefWidth="75.0" text="Job Post" />
+            </columns>
+        </TableView>
+        <JFXButton fx:id="btnDelete" layoutX="1015.0" layoutY="262.0" onAction="#DeleteEmployeeOnAction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Delete">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+
+        <Line endX="369.7999267578125" endY="1.52587890625E-5" layoutX="629.0" layoutY="66.0" startX="-100.0" stroke="WHITE" />
+        <JFXButton fx:id="btnUpdate" layoutX="900.0" layoutY="262.0" onAction="#EmpUpdateOnAction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Update">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <Label layoutX="271.0" layoutY="83.0" text="Employee Name" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="85.0" text="Employee ID" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="517.0" layoutY="83.0" text="Employee Date of Birth" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="764.0" layoutY="83.0" text="Employee Email" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="1010.0" layoutY="83.0" text="Employee Mobile-No" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="516.0" layoutY="183.0" text="Select Job Post" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btnClear" layoutX="784.0" layoutY="262.0" onAction="#btnClearOnAction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Clear">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+      <TextField fx:id="txtemployeequestion" layoutX="513.0" layoutY="203.0" prefHeight="40.0" prefWidth="225.0" promptText="Employee Name" stylesheets="@../style/managePageForStyle.css" />
+      <JFXButton fx:id="btnClear1" layoutX="666.0" layoutY="262.0" onAction="#btnClearOnAction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Get Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="780.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.restorise.restorisems.controller.SupplierController">
+    <children>
+        <Line endX="369.7999267578125" endY="1.52587890625E-5" layoutX="519.0" layoutY="66.0" startX="-100.0" stroke="WHITE" />
+        <Label layoutX="571.0" layoutY="12.0" text="Manage Supplier" textFill="WHITE">
+            <font>
+                <Font name="Impact" size="40.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtSupplierID" layoutX="42.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Supplier ID" stylesheets="@../style/managePageForStyle.css" />
+        <TextField fx:id="txtSupplierName" layoutX="359.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Supplier Name" stylesheets="@../style/managePageForStyle.css" />
+        <TextField fx:id="txtEmpMobile" layoutX="671.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Supplier Mobile-No" stylesheets="@../style/managePageForStyle.css" />
+        <DatePicker fx:id="dtSupplyingDate" layoutX="669.0" layoutY="215.0" prefHeight="40.0" prefWidth="225.0" promptText="Supplying Date" stylesheets="@../style/datepicker.css" />
+        <TextField fx:id="txtSupplierEmail" layoutX="980.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Supplier Email" stylesheets="@../style/managePageForStyle.css" />
+        <JFXButton fx:id="btnSupplierSaveOnAction" layoutX="1122.0" layoutY="286.0" onAction="#SupplierSaveOnAction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="tblSupplier" layoutX="20.0" layoutY="337.0" prefHeight="425.0" prefWidth="1212.0" stylesheets="@../style/tablestyle.css">
+            <columns>
+                <TableColumn fx:id="colSupplierID" minWidth="151.0" prefWidth="75.0" text="Supplier ID" />
+                <TableColumn fx:id="colSupplierName" minWidth="151.0" prefWidth="75.0" text="Supplier Name" />
+                <TableColumn fx:id="colSupplierMobileNo" minWidth="151.0" prefWidth="75.0" text="Supplier Mobile NO" />
+                <TableColumn fx:id="colSupplierEmail" minWidth="151.0" prefWidth="75.0" text="Supplier Email" />
+                <TableColumn fx:id="colSupplyItemID" minWidth="151.0" prefWidth="75.0" text="Supply Item ID" />
+                <TableColumn fx:id="colSupplierItemName" minWidth="151.0" prefWidth="75.0" text="Supply Item Type" />
+                <TableColumn fx:id="colSuppliedStockQTY" minWidth="151.0" prefWidth="75.0" text="Supplied Stock" />
+            <TableColumn fx:id="colSupplyDate" minWidth="151.0" prefWidth="75.0" text="Supplied Date" />
+            </columns>
+        </TableView>
+        <JFXButton fx:id="btnsupplierDeleteOnaction" layoutX="890.0" layoutY="285.0" onAction="#supplierDeleteOnaction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnSupplierUpdateOnAction" layoutX="1006.0" layoutY="285.0" onAction="#SupplierUpdateOnAction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Update" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <TextField fx:id="txtSupplyItemID" layoutX="43.0" layoutY="213.0" prefHeight="40.0" prefWidth="225.0" promptText=" Suppy Item ID" stylesheets="@../style/managePageForStyle.css" />
+        <JFXButton fx:id="btnsupplierClearOnaction1" layoutX="774.0" layoutY="285.0" onAction="#supplierClearOnaction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Clear">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <ComboBox fx:id="cbSupplyItem" layoutX="362.0" layoutY="215.0" prefHeight="40.0" prefWidth="225.0" promptText="Supply Item" stylesheets="@../style/combobox.css">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Ingradient" />
+                    <String fx:value="Snacks" />
+                    <String fx:value="Desserts" />
+                    <String fx:value="Bar-Drinks" />
+                    <String fx:value="Beverage" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+      <Label layoutX="43.0" layoutY="89.0" text="Supplier ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="91.0" text="Supplier Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="671.0" layoutY="90.0" text="Supplier Mobile-No" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="980.0" layoutY="89.0" text="Supplier Email" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="194.0" text="Supply Item ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="363.0" layoutY="196.0" text="Supply Item Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="671.0" layoutY="196.0" text="Supply Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSupplySTOCKQTY" layoutX="979.0" layoutY="216.0" prefHeight="40.0" prefWidth="225.0" promptText="Supply Stock QTY" stylesheets="@../style/managePageForStyle.css" />
+      <Label layoutX="983.0" layoutY="197.0" text="Add Stock QTY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnsupplierClearOnaction11" layoutX="654.0" layoutY="285.0" onAction="#supplierClearOnaction" prefHeight="40.0" prefWidth="100.0" stylesheets="@../style/botton.css" text="Get Recipts">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

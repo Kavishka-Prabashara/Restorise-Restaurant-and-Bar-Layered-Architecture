@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signuppane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.restorise.restorisems.controller.SignUpController">
+    <children>
+        <ImageView fitHeight="702.0" fitWidth="711.0" layoutX="653.0" layoutY="21.0">
+            <image>
+                <Image url="@../assests/logo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="768.0" fitWidth="683.0" layoutX="1.0">
+            <image>
+                <Image url="@../assests/beernbarimg.jpg" />
+            </image>
+            <effect>
+                <BoxBlur iterations="3" />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="770.0" fitWidth="690.0" layoutX="-1.0" layoutY="-3.0" opacity="0.6">
+            <image>
+                <Image url="@../assests/img.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="txtusername" layoutX="217.0" layoutY="437.0" prefHeight="35.0" prefWidth="250.0" promptText="Name" stylesheets="@../style/textfield.css" />
+        <PasswordField fx:id="txtpassword" layoutX="218.0" layoutY="488.0" prefHeight="35.0" prefWidth="250.0" promptText="Password" stylesheets="@../style/textfield.css" />
+        <JFXButton fx:id="btnsignup" layoutX="216.0" layoutY="642.0" onAction="#signuponaction" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #ED4909;" text="Sign Up" textFill="WHITE" />
+        <Label layoutX="178.0" layoutY="708.0" text="Already have an account ?" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Hyperlink fx:id="hyplogin" layoutX="410.0" layoutY="700.0" onAction="#hyploginonaction" text="Login">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Hyperlink>
+        <Circle fill="WHITE" layoutX="333.0" layoutY="102.0" radius="58.0" stroke="BLACK" strokeType="INSIDE" />
+        <ImageView fitHeight="163.0" fitWidth="163.0" layoutX="251.0" layoutY="21.0">
+            <image>
+                <Image url="@../assests/logo-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="262.0" layoutY="163.0" text="Restaurant &amp; Bar" textFill="WHITE">
+            <font>
+                <Font name="Leelawadee UI Semilight" size="20.0" />
+            </font>
+        </Label>
+        <Line endX="216.800048828125" layoutX="284.0" layoutY="205.0" startX="-100.0" stroke="WHITE" />
+        <Line endX="216.800048828125" layoutX="291.0" layoutY="375.0" startX="-100.0" stroke="WHITE" />
+        <Circle fill="WHITE" layoutX="330.0" layoutY="289.0" radius="62.0" stroke="BLACK" strokeType="INSIDE" />
+        <ImageView fitHeight="108.0" fitWidth="72.0" layoutX="294.0" layoutY="232.0">
+            <image>
+                <Image url="@../assests/chefs.png" />
+            </image>
+        </ImageView>
+      <TextField fx:id="txtemail" layoutX="217.0" layoutY="387.0" prefHeight="35.0" prefWidth="250.0" promptText="E-mail" stylesheets="@../style/textfield.css" />
+      <ComboBox fx:id="cmbQuestion" layoutX="217.0" layoutY="537.0" prefHeight="35.0" prefWidth="250.0" promptText="  Question" style="-fx-background-color: #FFFFFF;">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="What is your birth year?" />
+                  <String fx:value="What is your country?" />
+                  <String fx:value="What is your favorite sport?" />
+              </FXCollections>
+          </items>
+      </ComboBox>
+      <TextField fx:id="txtanswer" layoutX="217.0" layoutY="589.0" prefHeight="35.0" prefWidth="250.0" promptText="Answer" stylesheets="@../style/textfield.css" />
+    </children>
+</AnchorPane>

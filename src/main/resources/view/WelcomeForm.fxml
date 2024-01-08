@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="welcomepane" prefHeight="780.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.restorise.restorisems.controller.WelcomeController">
+   <children>
+      <ImageView fitHeight="780.0" fitWidth="1530.0" layoutX="1.0">
+         <image>
+            <Image url="@../assests/background.png" />
+         </image>
+         <effect>
+            <BoxBlur iterations="3" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="780.0" fitWidth="1530.0" layoutX="1.0" opacity="0.84">
+         <image>
+            <Image url="@../assests/img.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="470.0" layoutY="392.0" text="RestoRise" textFill="WHITE">
+         <font>
+            <Font name="Ink Free" size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="640.0" layoutY="55.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="Marlett" size="70.0" />
+         </font>
+      </Label>
+      <Circle fill="WHITE" layoutX="773.0" layoutY="301.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="262.0" fitWidth="277.0" layoutX="634.0" layoutY="168.0">
+         <image>
+            <Image url="@../assests/logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="752.0" layoutY="128.0" text="to" textFill="WHITE">
+         <font>
+            <Font name="Candara Light" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="780.0" layoutY="419.0" prefHeight="72.0" prefWidth="419.0" text="Restaurant &amp; Bar" textFill="WHITE">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="630.0" layoutY="473.0" prefHeight="72.0" prefWidth="419.0" text="Management System" textFill="WHITE">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="35.0" />
+         </font>
+      </Label>
+      <Line endX="358.2000732421875" layoutX="754.0" layoutY="545.0" startX="-302.60003662109375" stroke="WHITE" />
+      <Line endX="358.2000732421875" layoutX="754.0" layoutY="413.0" startX="-302.60003662109375" stroke="WHITE" />
+      <JFXButton fx:id="btnswipe" layoutX="647.0" layoutY="648.0" onAction="#btnswipeonaction" prefHeight="55.0" prefWidth="278.0" text="Tap to Unlock" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="48.0">
+               <image>
+                  <Image url="@../assests/password4.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="labelDate" alignment="CENTER" layoutX="681.0" layoutY="571.0" prefHeight="27.0" prefWidth="212.0" styleClass="contactPane" text="2023-November-15" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

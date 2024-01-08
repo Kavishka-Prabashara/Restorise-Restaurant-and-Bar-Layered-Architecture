@@ -1,0 +1,14 @@
+.combo-box {
+    -fx-background-color: rgba(255, 255, 255, 0.32);
+    -fx-border-color: linear-gradient(to bottom right, #ffffff, #ffffff);
+    -fx-border-width: 2px;
+    -fx-text-fill: #ffffff; /* Set the text color */
+}
+
+.combo-box:focused {
+    -fx-border-width: 2px;
+}
+
+.combo-box:hover {
+    -fx-background-color: rgba(0, 123, 255, 0); /* Adjust for hover effect */
+}

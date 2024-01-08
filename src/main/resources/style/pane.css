@@ -1,0 +1,6 @@
+.inside-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 15px;
+    -fx-border-width: 2px;
+    -fx-border-color: #e6e6e6;
+}

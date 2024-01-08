@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="780.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.restorise.restorisems.controller.CustomerController">
+    <children>
+        <Line endX="369.7999267578125" endY="1.52587890625E-5" layoutX="459.0" layoutY="66.0" startX="-100.0" stroke="WHITE" />
+        <Label layoutX="451.0" layoutY="12.0" text="Manage Customer" textFill="WHITE">
+            <font>
+                <Font name="Impact" size="40.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtCusId" layoutX="22.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Customer ID" stylesheets="@../style/managePageForStyle.css" />
+        <TextField fx:id="txtCusName" layoutX="268.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Customer Name" stylesheets="@../style/managePageForStyle.css" />
+        <TextField fx:id="txtCusMobile" layoutX="518.0" layoutY="109.0" prefHeight="40.0" prefWidth="225.0" promptText="Customer Mobile-No" stylesheets="@../style/managePageForStyle.css" />
+        <JFXButton fx:id="btncustomerSave" layoutX="1105.0" layoutY="179.0" onAction="#btncustomerSaveOnAction" prefHeight="40.0" prefWidth="106.0" stylesheets="@../style/botton.css" text="Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btncustomerDelete" layoutX="990.0" layoutY="179.0" onAction="#btncustomerDeleteOnAction" prefHeight="40.0" prefWidth="106.0" stylesheets="@../style/botton.css" text="Delete">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btncustomerUpdate" layoutX="874.0" layoutY="179.0" onAction="#btncustomerUpdateOnaction" prefHeight="40.0" prefWidth="106.0" stylesheets="@../style/botton.css" text="Update">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </JFXButton>
+      <TableView fx:id="tblCustomer" layoutX="20.0" layoutY="337.0" prefHeight="429.0" prefWidth="1212.0" stylesheets="@../style/tablestyle.css">
+        <columns>
+          <TableColumn fx:id="colCusId" minWidth="242.0" prefWidth="202.0" text="Customer ID" />
+          <TableColumn fx:id="colCusName" minWidth="242.0" prefWidth="202.0" text="Customer Name" />
+            <TableColumn fx:id="colCusMobileNo" minWidth="242.0" prefWidth="202.0" text="Customer Mobile No" />
+            <TableColumn fx:id="colCusOrderID" minWidth="242.0" prefWidth="75.0" text="Order ID" />
+            <TableColumn fx:id="colCusOrderDate" minWidth="242.0" prefWidth="75.0" text="Order Date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtCusOrderID" layoutX="761.0" layoutY="107.0" prefHeight="40.0" prefWidth="225.0" promptText="Customer Order ID" stylesheets="@../style/managePageForStyle.css" />
+      <DatePicker fx:id="DateCustomerOrderDate" layoutX="1006.0" layoutY="106.0" prefHeight="40.0" prefWidth="225.0" promptText="Customer Order Date" stylesheets="@../style/datepicker.css" />
+      <JFXButton fx:id="btncustomerUpdate1" layoutX="758.0" layoutY="179.0" onAction="#btncustomerUpdateOnaction" prefHeight="40.0" prefWidth="106.0" stylesheets="@../style/botton.css" text="Get Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

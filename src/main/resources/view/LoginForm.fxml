@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signuppane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1530.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.restorise.restorisems.controller.LoginController">
+    <children>
+        <ImageView fitHeight="702.0" fitWidth="711.0" layoutX="22.0" layoutY="30.0">
+            <image>
+                <Image url="@../assests/logo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="780.0" fitWidth="765.0" layoutX="764.0" layoutY="-1.0">
+            <image>
+                <Image url="@../assests/beernbarimg.jpg" />
+            </image>
+            <effect>
+                <BoxBlur iterations="3" />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="780.0" fitWidth="765.0" layoutX="764.0" layoutY="4.0" opacity="0.8">
+            <image>
+                <Image url="@../assests/img.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="txtusername" layoutX="1041.0" layoutY="471.0" prefHeight="35.0" prefWidth="250.0" promptText="E-mail" stylesheets="@../style/textfield.css" />
+        <PasswordField fx:id="txtpassword" layoutX="1041.0" layoutY="521.0" prefHeight="35.0" prefWidth="250.0" promptText="Password" stylesheets="@../style/textfield.css" />
+        <JFXButton fx:id="btnlogin" layoutX="1041.0" layoutY="572.0" onAction="#loginonaction" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #ED4909;" text="Login" textFill="WHITE" />
+        <Label layoutX="966.0" layoutY="692.0" text="Create an account" textFill="WHITE">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Hyperlink fx:id="btnhypsignup" layoutX="1208.0" layoutY="686.0" onAction="#hypsnuponaction" text="Sign Up">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Hyperlink>
+        <Circle fill="WHITE" layoutX="1154.0" layoutY="311.0" radius="58.0" stroke="BLACK" strokeType="INSIDE" />
+        <Circle fill="WHITE" layoutX="1158.0" layoutY="101.0" radius="62.0" stroke="BLACK" strokeType="INSIDE" />
+        <ImageView fitHeight="163.0" fitWidth="163.0" layoutX="1076.0" layoutY="21.0">
+            <image>
+                <Image url="@../assests/logo-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="1087.0" layoutY="163.0" text="Restaurant &amp; Bar" textFill="WHITE">
+            <font>
+                <Font name="Leelawadee UI Semilight" size="20.0" />
+            </font>
+        </Label>
+        <Line endX="216.800048828125" layoutX="1106.0" layoutY="205.0" startX="-100.0" stroke="WHITE" />
+        <ImageView fitHeight="108.0" fitWidth="72.0" layoutX="1119.0" layoutY="253.0">
+            <image>
+                <Image url="@../assests/chefs.png" />
+            </image>
+        </ImageView>
+      <Line endX="216.800048828125" layoutX="1106.0" layoutY="415.0" startX="-100.0" stroke="WHITE" />
+      <Hyperlink fx:id="btnuserOn" layoutX="1117.0" layoutY="608.0" onAction="#btnuserOnAction" text="forget password?" />
+    </children>
+</AnchorPane>

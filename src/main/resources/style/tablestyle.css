@@ -1,0 +1,33 @@
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #5c64cb, #0053af);
+    -fx-border-radius: 8px;
+    -fx-padding: 0px;
+}
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #5c64cb, #0053af);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0px 0px;
+}
+
+.table-view .column-header, .filter {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Arial";
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: rgb(234, 224, 224); /* Dark grey for odd rows */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #d0d0d0; /* Light grey for even rows */
+}

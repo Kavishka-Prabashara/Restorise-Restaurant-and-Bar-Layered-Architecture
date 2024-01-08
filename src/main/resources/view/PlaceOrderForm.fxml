@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="780.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.restorise.restorisems.controller.PlaceOrderController">
+    <children>
+          <TableView fx:id="tblAddToCart" layoutX="10.0" layoutY="99.0" prefHeight="446.0" prefWidth="360.0" stylesheets="@../style/tablestyle.css">
+              <columns>
+                  <TableColumn fx:id="colItemCategory" prefWidth="72.0" text="Item Category" />
+                  <TableColumn fx:id="colItemName" prefWidth="72.0" text="Product Name" />
+                  <TableColumn fx:id="colQTY" prefWidth="72.0" text="QTY" />
+                  <TableColumn fx:id="colUnitPrice" prefWidth="72.0" text="Unit Price" />
+            <TableColumn fx:id="colTotal" prefWidth="72.0" text="Total" />
+              </columns>
+          </TableView>
+          <JFXButton fx:id="btnProceedToCheckOut" layoutX="53.0" layoutY="648.0" onAction="#btnProceedToCheckOutOnAction" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: #4169E1;" text="Procced Checkout" textFill="WHITE">
+              <font>
+                  <Font name="System Bold" size="20.0" />
+              </font>
+          </JFXButton>
+          <JFXButton fx:id="btnCancelOrder" layoutX="138.0" layoutY="700.0" onAction="#btnCancelOrderOnAction" style="-fx-background-color: #808080;" text="Cancel Order" textFill="WHITE">
+              <font>
+                  <Font name="System Bold" size="12.0" />
+              </font>
+          </JFXButton>
+          <Label fx:id="lblChange" layoutX="10.0" layoutY="606.0" prefHeight="24.0" prefWidth="190.0" text="00.00" textFill="WHITE">
+              <font>
+                  <Font name="Segoe UI" size="16.0" />
+              </font>
+          </Label>
+          <Label layoutX="11.0" layoutY="581.0" prefHeight="19.0" prefWidth="82.0" text="Cash :  " textFill="WHITE">
+              <font>
+                  <Font name="Segoe UI" size="16.0" />
+              </font>
+          </Label>
+          <Label layoutX="124.0" layoutY="14.0" text="Place Order" textFill="WHITE">
+              <font>
+                  <Font name="Impact" size="30.0" />
+              </font>
+          </Label>
+          <Label fx:id="lblnetTotal" layoutX="9.0" layoutY="555.0" prefHeight="24.0" prefWidth="197.0" text="00.00" textFill="WHITE">
+              <font>
+                  <Font name="Segoe UI" size="16.0" />
+              </font>
+          </Label>
+          <TextField fx:id="txtCash" layoutX="57.0" layoutY="577.0" stylesheets="@../style/textfield.css" />
+      <JFXButton fx:id="btnEnter" layoutX="213.0" layoutY="579.0" onAction="#btnEnterOnAction" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #32CD32;" text="Enter" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+
+    </children>
+</AnchorPane>

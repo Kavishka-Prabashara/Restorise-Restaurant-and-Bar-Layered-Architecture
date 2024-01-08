@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="780.0" prefWidth="1250.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.restorise.restorisems.controller.UserDetailsChangeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="776.0" layoutX="410.0" layoutY="1.0" stroke="WHITE" strokeType="INSIDE" width="409.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.6780302958054976" radius="0.4266054870885446">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.25" green="0.8374999761581421" blue="1.0" opacity="0.5987841486930847" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="512.0" layoutY="115.0">
+         <image>
+            <Image url="@../assests/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="513.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton layoutX="593.0" layoutY="295.0" prefHeight="40.0" prefWidth="40.0" text=" " />
+      <TextField fx:id="txtuserID" layoutX="511.0" layoutY="364.0" prefHeight="26.0" prefWidth="200.0" promptText="Email/ID" style="-fx-background-color: #e8f4fa;" />
+      <TextField fx:id="txtuserName" layoutX="511.0" layoutY="399.0" prefHeight="26.0" prefWidth="200.0" promptText="Name" style="-fx-background-color: #e8f4fa;" />
+      <TextField fx:id="txtNewPassword" layoutX="511.0" layoutY="469.0" prefHeight="26.0" prefWidth="200.0" promptText="New Password" style="-fx-background-color: #e8f4fa;" />
+      <TextField fx:id="txtConfirmNewPassword" layoutX="511.0" layoutY="505.0" prefHeight="26.0" prefWidth="200.0" promptText="Confirm new Password" style="-fx-background-color: #e8f4fa;" />
+      <PasswordField fx:id="txtCurrentPassword" layoutX="511.0" layoutY="434.0" prefHeight="26.0" prefWidth="200.0" promptText="Old Password" style="-fx-background-color: #e8f4fa;" />
+      <ComboBox fx:id="cmQuestion" layoutX="511.0" layoutY="541.0" prefHeight="26.0" prefWidth="200.0" promptText="Question" style="-fx-background-color: #e8f4fa;" />
+      <TextField fx:id="txtAnswer" layoutX="511.0" layoutY="576.0" prefHeight="26.0" prefWidth="200.0" promptText="Answer" style="-fx-background-color: #e8f4fa;" />
+      <Button fx:id="btnUserUpdate" layoutX="510.0" layoutY="635.0" mnemonicParsing="false" onAction="#btnUserUpdateOnAction" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: #0000FF;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fx:id="btnchangeProfilePicture" fitHeight="40.0" fitWidth="40.0" layoutX="593.0" layoutY="294.0">
+         <image>
+            <Image url="@../assests/camerIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="563.0" layoutY="672.0" opacity="0.41" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #000000;" text="Cancel " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

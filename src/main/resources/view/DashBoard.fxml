@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root1" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f1f2f6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mrGreen.controller.DashBoardController">
+   <children>
+      <Label layoutX="182.0" layoutY="22.0" prefHeight="45.0" prefWidth="213.0" text="Welcome back">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Pane layoutX="-43.0" layoutY="16.0" prefHeight="689.0" prefWidth="180.0" style="-fx-background-color: #00C9B7; -fx-background-radius: 50;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="29.0" onAction="#LettuceOnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00C9B7;">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="48.0" layoutX="11.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons8-lettuce-100.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="13.0" layoutY="47.0" prefHeight="20.0" prefWidth="48.0" text="Lettuce" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="105.0" onAction="#greenhouseOnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00C9B7;">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <Label layoutY="45.0" prefHeight="20.0" prefWidth="75.0" text="Greenhouse" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="45.0" fitWidth="40.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons8-greenhouse-60.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="183.0" onAction="#fertilizerOnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00C9B7;">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <Label layoutX="8.0" layoutY="46.0" prefHeight="20.0" prefWidth="54.0" text="Fertilizer" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="15.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons8-fertilizer-64.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="268.0" onAction="#employeeOnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00C9B7;" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="44.0" prefHeight="20.0" prefWidth="62.0" text="Employee" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="11.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons8-employee-100.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="352.0" onAction="#supplairOnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00C9B7;">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <Label layoutX="10.0" layoutY="46.0" prefHeight="20.0" prefWidth="62.0" text="Supplier" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons8-supplier-100.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="430.0" onAction="#customerOnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00C9B7;">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <Label layoutX="7.0" layoutY="45.0" prefHeight="20.0" prefWidth="62.0" text="Customer" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="17.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons8-customer-100.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="510.0" onAction="#orderOnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00C9B7;">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <Label layoutX="17.0" layoutY="46.0" prefHeight="20.0" prefWidth="40.0" text="Order" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="15.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons8-order-100.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="592.0" onAction="#reportsOnAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #00C9B7;">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <Label layoutX="11.0" layoutY="49.0" prefHeight="20.0" prefWidth="53.0" text="Reports" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="8.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons8-documentation-67 (1).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="156.0" layoutY="108.0" prefHeight="584.0" prefWidth="1099.0" style="-fx-background-radius: 30; -fx-background-color: white;" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="24.799999999999955">
+         <children>
+            <Text layoutX="979.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out" textAlignment="CENTER" wrappingWidth="96.99999999999977">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Pane layoutX="46.0" layoutY="43.0" prefHeight="153.0" prefWidth="281.0" style="-fx-background-color: #00C9B7; -fx-background-radius: 30;" AnchorPane.bottomAnchor="356.0" AnchorPane.topAnchor="75.0">
+               <children>
+                  <Text layoutX="115.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Greenhouses" textAlignment="CENTER" wrappingWidth="167.4404296874999">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtGreenhouse" layoutX="128.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" textAlignment="CENTER" wrappingWidth="139.7607421875">
+                     <font>
+                        <Font size="68.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="116.0" fitWidth="130.0" layoutX="11.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-greenhouse-100.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="393.0" layoutY="27.0" prefHeight="153.0" prefWidth="281.0" style="-fx-background-color: #00C9B7; -fx-background-radius: 30;" AnchorPane.topAnchor="75.0">
+               <children>
+                  <Text layoutX="127.0" layoutY="103.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Employees" textAlignment="CENTER" wrappingWidth="146.4404296875">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtEmployee" fontSmoothingType="LCD" layoutX="129.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" wrappingWidth="139.7607421875">
+                     <font>
+                        <Font size="68.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="108.0" fitWidth="97.0" layoutX="33.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-employees-100.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="752.0" layoutY="27.0" prefHeight="153.0" prefWidth="287.0" style="-fx-background-color: #00C9B7; -fx-background-radius: 30;" AnchorPane.topAnchor="75.0">
+               <children>
+                  <Text layoutX="148.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Orders" textAlignment="CENTER" wrappingWidth="108.0">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtOrders" layoutX="132.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20" textAlignment="CENTER" wrappingWidth="139.7607421875">
+                     <font>
+                        <Font size="68.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="97.0" fitWidth="97.0" layoutX="23.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-customers-100%2520(1).png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="46.0" layoutY="344.0" prefHeight="153.0" prefWidth="287.0" style="-fx-background-color: #00C9B7; -fx-background-radius: 30;" AnchorPane.bottomAnchor="112.0">
+               <children>
+                  <Text layoutX="124.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Customers" textAlignment="CENTER" wrappingWidth="146.44042968750023">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtCustomer" layoutX="122.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18" textAlignment="CENTER" wrappingWidth="139.7607421875">
+                     <font>
+                        <Font size="68.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="97.0" fitWidth="97.0" layoutX="17.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-customer-100.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="406.0" layoutY="343.0" prefHeight="153.0" prefWidth="287.0" style="-fx-background-color: #00C9B7; -fx-background-radius: 30;" AnchorPane.bottomAnchor="112.0">
+               <children>
+                  <Text layoutX="140.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Suppliers" textAlignment="CENTER" wrappingWidth="127.4404296875">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtSupplier" layoutX="128.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12" textAlignment="CENTER" wrappingWidth="139.7607421875">
+                     <font>
+                        <Font size="68.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="100.0" fitWidth="97.0" layoutX="32.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-supplier-100.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="760.0" layoutY="337.0" prefHeight="153.0" prefWidth="287.0" style="-fx-background-color: #00C9B7; -fx-background-radius: 30;" AnchorPane.bottomAnchor="112.0">
+               <children>
+                  <Text layoutX="129.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Lattuce Types" textAlignment="CENTER" wrappingWidth="139.7607421874999">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtLettuceCount" layoutX="127.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" textAlignment="CENTER" wrappingWidth="139.7607421875">
+                     <font>
+                        <Font size="68.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="97.0" fitWidth="97.0" layoutX="21.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-lettuce-100.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="930.0" layoutY="515.0" onMouseClicked="#backOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-back-64.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="1025.0" layoutY="15.0" prefHeight="70.0" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.rightAnchor="75.0">
+         <children>
+            <Text fx:id="txtTime" layoutX="21.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtDate" layoutX="45.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2023.11.02">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="#00c9b7" layoutX="741.0" layoutY="69.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" textAlignment="RIGHT" wrappingWidth="263.0">
+         <font>
+            <Font name="System Bold" size="49.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="585.0" layoutY="42.0" onAction="#notifyOnAction" prefHeight="45.0" prefWidth="54.0" style="-fx-background-color: #00C9B7;">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <graphic>
+            <Pane prefHeight="45.0" prefWidth="54.0">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="38.0" layoutX="10.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-messages-100.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="464.0" layoutY="42.0" onAction="#aboutOnAction" prefHeight="45.0" prefWidth="87.0" style="-fx-background-color: #00C9B7;">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <graphic>
+            <Pane prefHeight="45.0" prefWidth="87.0">
+               <children>
+                  <Label layoutX="5.0" layoutY="8.0" prefHeight="26.0" prefWidth="75.0" text="About us" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="1234.0" layoutY="7.0" onMouseClicked="#closeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-close-50 (1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

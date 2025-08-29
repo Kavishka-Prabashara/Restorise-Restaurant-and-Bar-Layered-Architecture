@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: FFFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mrGreen.controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="727.0" prefWidth="849.0">
+         <children>
+            <ImageView fitHeight="727.0" fitWidth="820.0" layoutX="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/9372018.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="812.0" prefHeight="721.0" prefWidth="468.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="158.0" layoutY="132.0" prefHeight="58.0" prefWidth="121.0" text="Login" textFill="#00c9b7">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtNmae" labelFloat="true" layoutX="79.0" layoutY="243.0" onAction="#userNameOnAction" prefHeight="34.0" prefWidth="294.0" promptText="Username" AnchorPane.rightAnchor="95.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="79.0" layoutY="328.0" onAction="#passwordOnAction" prefHeight="25.0" prefWidth="294.0" promptText="Password" AnchorPane.bottomAnchor="359.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="328.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="172.0" layoutY="450.0" onAction="#loginOnAction" prefHeight="34.0" prefWidth="93.0" style="-fx-background-color: #09ADA8;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="67.0" layoutY="591.0" prefHeight="34.0" prefWidth="334.0" text="&quot;If there is a future, it will be Green&quot;" textFill="#00c9b7">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="34.0" fitWidth="29.0" layoutX="423.0" layoutY="10.0" onMouseClicked="#closeOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-close-50 (1).png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="160.0" layoutY="516.0" onAction="#FogetOnAction" text="Forgot password" textFill="#09ada8">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <JFXTextField fx:id="txtPAssWord" labelFloat="true" layoutX="79.0" layoutY="331.0" prefHeight="25.0" prefWidth="294.0" promptText="Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="331.0" layoutY="330.0" onMousePressed="#showOnActionPressed" onMouseReleased="#showOnActionRellese" prefHeight="29.0" prefWidth="35.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <Pane prefHeight="26.0" prefWidth="29.0">
+                     <children>
+                        <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons8-show-password-50.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+            </JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
